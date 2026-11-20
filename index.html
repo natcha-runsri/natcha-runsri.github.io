@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- แก้ชื่อและคำอธิบายให้ตรงกับข้อมูลจริง -->
+  <title>Natcha Runsri | Full-stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio ของ Natcha Runsri นักศึกษา IT ที่สนใจฝึกงานตำแหน่ง Full-Stack Developer">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Noto+Sans:ital,wght@1,400;1,800&family=Figtree:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ใส่คลาส js ทันที เพื่อให้ animation ตอนโหลดทำงานเฉพาะเมื่อเปิด JavaScript -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <p class="welcome">Welcome to My Portfolio</p>
+      <!-- แก้ชื่อจริงตรงนี้ -->
+      <p class="owner-name">Natcha<br>Runsri</p>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__stage">
+        <h1 id="hero-title" class="visually-hidden">Natcha Runsri — Full-stack Developer</h1>
+
+        <p class="hero__title hero__title--top" aria-hidden="true" data-reveal style="--reveal-delay: 0.05s">Full-stack</p>
+
+        <!-- รูปโปรไฟล์: วางไฟล์จริงไว้ที่ images/profile1.jpg และ images/profile2.jpg -->
+        <img class="avatar avatar--one" src="images/profile1.jpg" alt="รูปโปรไฟล์ของ Natcha Runsri ยิ้มสวมเสื้อยีนส์" width="130" height="130" loading="eager">
+        <img class="avatar avatar--two" src="images/profile2.jpg" alt="รูปโปรไฟล์ของ Natcha Runsri ยิ้ม ชู2นิ้ว" width="130" height="130" loading="eager">
+
+        <!-- โฟลเดอร์ + แท็บนำทาง -->
+        <div class="folder" data-reveal style="--reveal-delay: 0.3s">
+          <svg class="folder__back" viewBox="0 0 720 558" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <rect x="31" y="38" width="659" height="380" rx="42" />
+            <rect x="409" y="0" width="281" height="140" rx="30" />
+          </svg>
+
+          <nav class="folder__tabs" aria-label="เมนูหลักของ Portfolio">
+            <a class="paper paper--contact" href="#contact"><span class="paper__ear">My Contact</span></a>
+            <a class="paper paper--project" href="#project"><span class="paper__ear">My Project</span></a>
+            <a class="paper paper--skill" href="#skill"><span class="paper__ear">My Skill</span></a>
+            <a class="paper paper--about" href="#about"><span class="paper__ear">About Me</span></a>
+          </nav>
+
+          <svg class="folder__front" viewBox="0 0 720 558" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 262 C0 214 26 186 74 186 L646 186 C694 186 720 214 720 262 L667 558 L49 558 Z" />
+          </svg>
+
+          <p class="folder__greeting" aria-hidden="true">
+            <span class="folder__hello">Hello</span>
+            <span class="folder__im">I’m</span>
+          </p>
+        </div>
+
+        <p class="hero__title hero__title--bottom" aria-hidden="true" data-reveal style="--reveal-delay: 0.55s">Developer</p>
+
+        <!-- ป้ายปุ่มลอย -->
+        <ul class="pills" aria-label="ลิงก์ติดต่อและเอกสาร">
+          <li>
+            <a class="pill pill--github" href="https://github.com/natcha-runsri" target="_blank" rel="noopener" style="--float-delay: -1.2s">
+              <svg class="pill__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="pill pill--resume" href="files/Resume.pdf" target="_blank" rel="noopener" style="--float-delay: -2.6s">
+              <!-- ไอคอนเอกสารเต็มแผ่น (หน้ากระดาษพับมุม + รูปคน) -->
+              <svg class="pill__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M6.5 2h7.6l5.4 5.4V20a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
+                <path fill="#6B1F3A" opacity=".35" d="M14.1 2v5.4h5.4Z"/>
+                <circle cx="12" cy="11.2" r="2.5" fill="#6B1F3A"/>
+                <path fill="#6B1F3A" d="M7.5 18.6c.5-2.6 2.3-4.2 4.5-4.2s4 1.6 4.5 4.2Z"/>
+              </svg>
+              <span>My Resume</span>
+            </a>
+          </li>
+          <li>
+            <a class="pill pill--email" href="mailto:natcha.run30@gmail.com" style="--float-delay: -0.4s">
+              <svg class="pill__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="2.5" y="5" width="19" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 5.8 12 13l9-7.2M3 18.4l6.6-6.4M21 18.4 14.4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+              <span>natcha.run30@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- ของตกแต่ง: ประกายสีเหลือง และดาวเส้นสีฟ้า -->
+        <div class="decor" aria-hidden="true">
+          <svg class="deco deco--star deco--1" viewBox="0 0 48 48">
+            <path d="M24 13.5 26.9 19.9 33.8 20.6 28.6 25.3 30.1 32.1 24 28.6 17.9 32.1 19.4 25.3 14.2 20.6 21.1 19.9Z" />
+            <path class="deco__rays" d="M24 3v5M24 40v5M5 24h5M38 24h5M10.5 10.5l3.4 3.4M34.1 34.1l3.4 3.4M37.5 10.5l-3.4 3.4M13.9 34.1l-3.4 3.4" />
+          </svg>
+          <svg class="deco deco--sparkle deco--2" viewBox="0 0 48 48">
+            <path d="M28 6c1.3 8.4 4.8 11.9 13.2 13.2C32.8 20.5 29.3 24 28 32.4 26.7 24 23.2 20.5 14.8 19.2 23.2 17.9 26.7 14.4 28 6Z" />
+            <path d="M12 28c.7 4.6 2.6 6.5 7.2 7.2-4.6.7-6.5 2.6-7.2 7.2-.7-4.6-2.6-6.5-7.2-7.2 4.6-.7 6.5-2.6 7.2-7.2Z" />
+          </svg>
+          <svg class="deco deco--sparkle deco--3" viewBox="0 0 48 48">
+            <path d="M20 14c1.3 8.4 4.8 11.9 13.2 13.2C24.8 28.5 21.3 32 20 40.4 18.7 32 15.2 28.5 6.8 27.2 15.2 25.9 18.7 22.4 20 14Z" />
+            <path d="M36 4c.7 4.6 2.6 6.5 7.2 7.2-4.6.7-6.5 2.6-7.2 7.2-.7-4.6-2.6-6.5-7.2-7.2 4.6-.7 6.5-2.6 7.2-7.2Z" />
+          </svg>
+          <svg class="deco deco--star deco--4" viewBox="0 0 48 48">
+            <path d="M24 13.5 26.9 19.9 33.8 20.6 28.6 25.3 30.1 32.1 24 28.6 17.9 32.1 19.4 25.3 14.2 20.6 21.1 19.9Z" />
+            <path class="deco__rays" d="M24 3v5M24 40v5M5 24h5M38 24h5M10.5 10.5l3.4 3.4M34.1 34.1l3.4 3.4M37.5 10.5l-3.4 3.4M13.9 34.1l-3.4 3.4" />
+          </svg>
+          <svg class="deco deco--sparkle deco--5" viewBox="0 0 48 48">
+            <path d="M24 6c1.6 10 5.8 14.2 15.8 15.8C29.8 23.4 25.6 27.6 24 37.6 22.4 27.6 18.2 23.4 8.2 21.8 18.2 20.2 22.4 16 24 6Z" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section ปลายทางของแท็บ: แก้เนื้อหาจริงในแต่ละส่วน -->
+    <!-- =================== ABOUT ME =================== -->
+    <section id="about" class="about sheet" tabindex="-1" aria-labelledby="about-title">
+      <!-- แท็บแฟ้มเอกสาร: ซ้อนจากหลัง (Contact) ไปหน้า (About) -->
+      <nav class="section-tabs" aria-label="สลับหัวข้อ">
+        <a class="ftab ftab--contact" href="#contact"><span class="ftab__ear">My Contact</span></a>
+        <a class="ftab ftab--project" href="#project"><span class="ftab__ear">My Project</span></a>
+        <a class="ftab ftab--skill" href="#skill"><span class="ftab__ear">My Skill</span></a>
+        <a class="ftab ftab--about is-active" href="#about" aria-current="true"><span class="ftab__ear">About Me</span></a>
+      </nav>
+
+      <div class="about__body">
+        <!-- คอลัมน์ซ้าย: กรอบรูป -->
+        <figure class="photo-card" data-inview="left">
+          <svg class="photo-card__binder" viewBox="0 0 120 130" aria-hidden="true" focusable="false">
+            <path class="binder__wire" d="M38 66 52 18M82 66 68 18" />
+            <ellipse class="binder__wire" cx="60" cy="14" rx="14" ry="8" />
+            <path class="binder__body" d="M32 60h56l14 50H18Z" />
+            <path class="binder__shine" d="M46 60h8L44 110h-8ZM70 60h6l10 50h-6Z" />
+            <rect class="binder__jaw" x="2" y="106" width="116" height="22" rx="11" />
+          </svg>
+
+          <div class="photo-card__photo">
+            <!-- แก้ชื่อไฟล์รูปจริงตรงนี้ -->
+            <img src="images/profile-about.jpg" alt="ภาพโปรไฟล์ของณัชชา รุนศรี" width="322" height="420" loading="lazy">
+
+            <svg class="photo-card__paperclip" viewBox="0 0 32 64" aria-hidden="true" focusable="false">
+              <path d="M12 22V9a6 6 0 0 1 12 0v38a9 9 0 0 1-18 0V17" />
+            </svg>
+            <span class="photo-card__sticker" aria-hidden="true">KU · IT</span>
+          </div>
+
+          <!-- แก้ชั้นปี / สาขา / มหาวิทยาลัย ให้ตรงกับข้อมูลจริง -->
+          <figcaption class="photo-card__caption">
+            นักศึกษาชั้นปีที่ 4 สาขาเทคโนโลยีสารสนเทศ<br>
+            มหาวิทยาลัยเกษตรศาสตร์<br>
+            วิทยาเขตกำแพงแสน
+          </figcaption>
+
+          <svg class="photo-card__sparkle" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <path d="M18 12c1.4 8.6 5 12.2 13.6 13.6C23 27 19.4 30.6 18 39.2 16.6 30.6 13 27 4.4 25.6 13 24.2 16.6 20.6 18 12Z" />
+            <path d="M36 4c.8 4.8 2.8 6.8 7.6 7.6-4.8.8-6.8 2.8-7.6 7.6-.8-4.8-2.8-6.8-7.6-7.6 4.8-.8 6.8-2.8 7.6-7.6Z" />
+          </svg>
+        </figure>
+
+        <!-- คอลัมน์ขวา: ข้อความแนะนำตัว -->
+        <div class="about__text" data-inview="right">
+          <h2 id="about-title" class="about__heading">
+            <span class="about__hi">HI, I’M</span>
+            <span class="name-tape">
+              <!-- แก้ชื่อจริงตรงนี้ -->
+              <span class="name-tape__text">NATCHA RUNSRI</span>
+              <svg class="name-tape__clip" viewBox="0 0 120 130" aria-hidden="true" focusable="false">
+                <path d="M38 66 52 18M82 66 68 18" />
+                <ellipse cx="60" cy="14" rx="14" ry="8" />
+                <path d="M32 60h56l14 50H18Z" />
+                <path d="M47 60 40 110M73 60l7 50" />
+              </svg>
+            </span>
+          </h2>
+
+          <p lang="th">สามารถพัฒนา Web Application ได้ทั้ง Front-end, Back-end และ Database ใช้ Docker ได้ และออกแบบ UI ด้วย Figma ได้ มีประสบการณ์ทำโปรเจกต์ทั้งงานเดี่ยวและทีม</p>
+          <p lang="th">ตอนนี้กำลังมองหาโอกาสฝึกงานสหกิจในตำแหน่ง Full-Stack Developer เพื่อนำความรู้ไปใช้กับงานจริง เรียนรู้การทำงานเป็นทีมกับมืออาชีพ และสร้างประสบการณ์การทำงานให้มากที่สุด</p>
+
+          <div class="highlights">
+            <ul class="highlights__list" lang="th" aria-label="จุดเด่น">
+              <li class="hl hl--1" style="--float-delay: -0.6s">
+                <svg class="hl__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="none" stroke="#1F2B3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 6 3 12l5 6M16 6l5 6-5 6M14 4l-4 16" />
+                </svg>
+                ทำโปรเจกต์ครบ Front-end, Back-end, Database
+              </li>
+              <li class="hl hl--2" style="--float-delay: -2.1s">
+                <svg class="hl__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="#F24E1E" d="M9 2h3v6H9a3 3 0 0 1 0-6Z" />
+                  <path fill="#FF7262" d="M12 2h3a3 3 0 0 1 0 6h-3Z" />
+                  <path fill="#A259FF" d="M9 8h3v6H9a3 3 0 0 1 0-6Z" />
+                  <circle fill="#1ABCFE" cx="15" cy="11" r="3" />
+                  <path fill="#0ACF83" d="M9 14h3v3a3 3 0 1 1-3-3Z" />
+                </svg>
+                ออกแบบ UI/UX ก่อนลงมือเขียนโค้ด
+              </li>
+              <li class="hl hl--3" style="--float-delay: -3.4s">
+                <svg class="hl__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <rect width="24" height="24" rx="6" fill="#2496ED" />
+                  <path fill="#fff" d="M3.8 12.6h15.6c.5-.9 1.5-1.3 2.3-1.1-.2 1-1 1.6-1.9 1.7-1 3.6-4.2 6-8.9 6-4 0-6.6-2.4-7.1-6.6Z" />
+                  <g fill="#fff">
+                    <rect x="5.6" y="9.6" width="2.4" height="2.4" /><rect x="8.5" y="9.6" width="2.4" height="2.4" />
+                    <rect x="11.4" y="9.6" width="2.4" height="2.4" /><rect x="14.3" y="9.6" width="2.4" height="2.4" />
+                    <rect x="8.5" y="6.7" width="2.4" height="2.4" /><rect x="11.4" y="6.7" width="2.4" height="2.4" />
+                  </g>
+                </svg>
+                Containerize แอปให้รันได้เหมือนกันทุกเครื่อง
+              </li>
+              <li class="hl hl--4" style="--float-delay: -1.3s">
+                <svg class="hl__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="none" stroke="#1F2B3D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M8 12V6.5a1.5 1.5 0 0 1 3 0V11m0-1V5a1.5 1.5 0 0 1 3 0v6m0-1V6.5a1.5 1.5 0 0 1 3 0V12m0-1.5a1.5 1.5 0 0 1 3 0V14a7 7 0 0 1-7 7h-.6a6 6 0 0 1-4.8-2.4l-3-4a1.5 1.5 0 0 1 2.3-1.9L8 14.5M3.5 7.5 2 6.5M5 4.5 4.2 3" />
+                </svg>
+                ทำงานได้ทั้งเดี่ยวและร่วมกับทีม
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- คอร์กบอร์ด: ยึดมุมขวาล่างของ section (อยู่นอกคอลัมน์ข้อความ) -->
+      <div class="corkboard" aria-hidden="true">
+        <svg class="corkboard__star" viewBox="0 0 48 48">
+          <path d="M24 13.5 26.9 19.9 33.8 20.6 28.6 25.3 30.1 32.1 24 28.6 17.9 32.1 19.4 25.3 14.2 20.6 21.1 19.9Z" />
+          <path d="M24 3v5M24 40v5M5 24h5M38 24h5M10.5 10.5l3.4 3.4M34.1 34.1l3.4 3.4M37.5 10.5l-3.4 3.4M13.9 34.1l-3.4 3.4" />
+        </svg>
+      </div>
+
+      <a class="to-top" href="#main" aria-label="กลับขึ้นด้านบน">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- =================== MY SKILL =================== -->
+    <section id="skill" class="skill sheet" tabindex="-1" aria-labelledby="skill-title">
+      <nav class="section-tabs" aria-label="สลับหัวข้อ">
+        <a class="ftab ftab--contact" href="#contact"><span class="ftab__ear">My Contact</span></a>
+        <a class="ftab ftab--project" href="#project"><span class="ftab__ear">My Project</span></a>
+        <a class="ftab ftab--skill is-active" href="#skill" aria-current="true"><span class="ftab__ear">My Skill</span></a>
+        <a class="ftab ftab--about" href="#about"><span class="ftab__ear">About Me</span></a>
+      </nav>
+
+      <div class="skill__board" data-stagger>
+        <!-- การ์ดกลาง: หัวข้อ section -->
+        <div class="title-card" style="--i: 0; --tilt: -0.6deg">
+          <span class="title-card__tape" aria-hidden="true"></span>
+          <h2 id="skill-title" class="title-card__heading">
+            <span class="title-card__big">Skills</span>
+            <span class="title-card__sub">my abilities</span>
+          </h2>
+        </div>
+
+        <!-- ===== Front-end (แก้รายการไอคอนได้ที่ <li>) ===== -->
+        <article class="note note--front" style="--i: 1; --tilt: -1.2deg" aria-labelledby="sk-front">
+          <div class="note__paper">
+            <h3 id="sk-front" class="note__title">Front-end</h3>
+            <ul class="sk-list">
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#E34F26" d="M3.5 2h17l-1.5 17.2L12 22l-7-2.8Z"/><path fill="#EF652A" d="M12 3.6v16.8l5.6-2.2L19 3.6Z"/><text x="12" y="15.8" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-weight="800" font-size="10.5" fill="#fff">5</text></svg></span><span class="sk__name">HTML</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#1572B6" d="M3.5 2h17l-1.5 17.2L12 22l-7-2.8Z"/><path fill="#33A9DC" d="M12 3.6v16.8l5.6-2.2L19 3.6Z"/><text x="12" y="15.8" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-weight="800" font-size="10.5" fill="#fff">3</text></svg></span><span class="sk__name">CSS</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="3" fill="#F7DF1E"/><text x="21.2" y="20.6" text-anchor="end" font-family="Figtree, Arial, sans-serif" font-weight="800" font-size="10.5" fill="#1F1F1F">JS</text></svg></span><span class="sk__name">JavaScript</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="#149ECA" stroke-width="1.3"><ellipse cx="12" cy="12" rx="10.2" ry="3.9"/><ellipse cx="12" cy="12" rx="10.2" ry="3.9" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10.2" ry="3.9" transform="rotate(120 12 12)"/></g><circle cx="12" cy="12" r="2" fill="#149ECA"/></svg></span><span class="sk__name">React</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#1F1F1F" transform="translate(1.5 1.5) scale(.875)" d="M16.712 17.711H7.288l-1.204 2.916L12 24l5.916-3.373-1.204-2.916ZM14.692 0l7.832 16.855.814-12.856L14.692 0ZM9.308 0 .662 3.999l.814 12.856L9.308 0Zm-.405 13.93h6.198L12 6.396 8.903 13.93Z"/></svg></span><span class="sk__name">Angular</span></li>
+            </ul>
+          </div>
+          <svg class="deco-scissors" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g fill="none" stroke="#6B1F3A" stroke-width="2.4" stroke-linecap="round"><circle cx="48" cy="44" r="7"/><circle cx="20" cy="55" r="7"/><path d="M42 40 4 20M24 49 40 4"/></g></svg>
+        </article>
+
+        <!-- ===== Mobile ===== -->
+        <article class="note note--mobile" style="--i: 2; --tilt: 1deg" aria-labelledby="sk-mobile">
+          <div class="note__paper">
+            <h3 id="sk-mobile" class="note__title">Mobile</h3>
+            <ul class="sk-list">
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#47C5FB" d="M14.3 1.5 3.8 12l3.3 3.3L20.9 1.5Z"/><path fill="#47C5FB" d="M14.3 11.2 8.6 16.9l5.7 5.6h6.6l-5.7-5.7 5.7-5.6Z"/><path fill="#00569E" d="M14.3 22.5h6.6l-5.7-5.7-3.3 3.2Z"/></svg></span><span class="sk__name">Flutter</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#0175C2" d="M4 8.5 8.5 4h8l3.5 3.5v8L15.5 20h-8L4 16.5Z"/><path fill="#13B9FD" d="M8.5 4 20 15.5h-4.5l-7-7Z"/></svg></span><span class="sk__name">Dart</span></li>
+            </ul>
+          </div>
+          <svg class="deco-folder" viewBox="0 0 48 40" aria-hidden="true" focusable="false"><path fill="#D9A877" d="M2 8a4 4 0 0 1 4-4h11l4 4h21a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z"/><path fill="#EDC497" d="M7 16h39l-4.5 20H2.5Z"/></svg>
+        </article>
+
+        <!-- ===== Back-end ===== -->
+        <article class="note note--back" style="--i: 3; --tilt: 0.8deg" aria-labelledby="sk-back">
+          <div class="note__paper">
+            <h3 id="sk-back" class="note__title">Back-end</h3>
+            <ul class="sk-list">
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#5FA04E" d="M12 1.8 21 7v10l-9 5.2L3 17V7Z"/><text x="12" y="15.4" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-weight="800" font-size="8.5" fill="#fff">JS</text></svg></span><span class="sk__name">Node.js</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><text x="12" y="15.6" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-weight="600" font-size="11" letter-spacing="-.3" fill="#1F1F1F">ex</text></svg></span><span class="sk__name">Express</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="#E76F00" stroke-width="1.4" stroke-linecap="round" d="M10 3.5c-1.6 1.5 1.6 2.6 0 4.6M13.4 2.5c-1.6 1.5 1.6 2.6 0 4.6"/><path fill="#5382A1" d="M5.5 10.5h11V14a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5Z"/><path fill="none" stroke="#5382A1" stroke-width="1.5" d="M16.5 11.5h1.3a2.2 2.2 0 0 1 0 4.4h-1.6"/><ellipse cx="11" cy="21" rx="7.5" ry="1.3" fill="#5382A1"/></svg></span><span class="sk__name">Java</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#6DB33F" transform="translate(1.5 1.5) scale(.875)" d="m23.693 10.7058-4.73-8.1844c-.4094-.7106-1.4166-1.2942-2.2402-1.2942H7.2725c-.819 0-1.8308.5836-2.2402 1.2942L.307 10.7058c-.4095.7106-.4095 1.873 0 2.5837l4.7252 8.189c.4094.7107 1.4166 1.2943 2.2402 1.2943h9.455c.819 0 1.826-.5836 2.2402-1.2942l4.7252-8.189c.4095-.7107.4095-1.8732 0-2.5838zM10.9763 5.7547c0-.5365.4377-.9742.9742-.9742s.9742.4377.9742.9742v5.8217c0 .5366-.4377.9742-.9742.9742s-.9742-.4376-.9742-.9742zm.9742 12.4294c-3.6427 0-6.6077-2.965-6.6077-6.6077.0047-2.0896.993-4.0521 2.6685-5.304a.8657.8657 0 0 1 1.2142.1788.8657.8657 0 0 1-.1788 1.2143c-2.1602 1.6048-2.612 4.6592-1.0072 6.8194 1.6049 2.1603 4.6593 2.612 6.8195 1.0072 1.2378-.9177 1.9673-2.372 1.9673-3.9157a4.8972 4.8972 0 0 0-1.9861-3.925c-.386-.2824-.466-.8284-.1836-1.2143.2824-.386.8283-.466 1.2143-.1835 1.6895 1.2471 2.6826 3.2238 2.6873 5.3228 0 3.6474-2.965 6.6077-6.6077 6.6077z"/></svg></span><span class="sk__name">Spring Boot</span></li>
+            </ul>
+          </div>
+          <svg class="deco-binder" viewBox="0 0 120 130" aria-hidden="true" focusable="false"><path fill="none" stroke="#1F2B3D" stroke-width="7" stroke-linecap="round" d="M38 66 52 18M82 66 68 18"/><ellipse fill="none" stroke="#1F2B3D" stroke-width="7" cx="60" cy="14" rx="14" ry="8"/><path fill="#1F2B3D" d="M32 60h56l14 50H18Z"/><path fill="#F4F1E4" opacity=".85" d="M46 60h8L44 110h-8ZM70 60h6l10 50h-6Z"/><rect fill="#1F2B3D" x="2" y="106" width="116" height="20" rx="10"/></svg>
+        </article>
+
+        <!-- ===== Database ===== -->
+        <article class="note note--db" style="--i: 4; --tilt: -0.8deg" aria-labelledby="sk-db">
+          <div class="note__paper">
+            <h3 id="sk-db" class="note__title">Database</h3>
+            <ul class="sk-list">
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#00758F" d="M2.6 18.6C3.8 13 8.4 7.8 14.9 7.6c1.6 0 3 .5 4 1.4-.9.1-1.7.6-2 1.3 1.6.6 2.6 1.9 2.9 3.7-1.2-.9-2.7-1.2-4.1-.9-2.8.6-4.6 2.8-5.2 5.5-1.9-.9-4.8-1.1-7.9 0Z"/><path fill="#F29111" d="M14.8 5.6c.5-1.4 1.7-2.4 3.1-2.7-.4 1.1-.3 2.3.3 3.3-1.2-.4-2.4-.6-3.4-.6Z"/></svg></span><span class="sk__name">MySQL</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#FFA000" d="M4.5 19.3 7.6 3.2c.1-.6.9-.7 1.2-.2l3.2 6Z"/><path fill="#F57C00" d="M13.2 11.4 15 7.9c.3-.5 1-.5 1.2 0l3.3 11.4Z"/><path fill="#FFCA28" d="M4.5 19.3 16 7.7c.4-.4 1.1-.2 1.2.3l2.3 11.3-6.6 3.6c-.6.3-1.3.3-1.9 0Z"/></svg></span><span class="sk__name">Firebase</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#4169E1" transform="translate(1.5 1.5) scale(.875)" d="M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-1.0074-.2321-1.6533.3411-2.2935.1312-2.5256-.0191 1.342-2.0482 2.445-4.522 3.0411-6.8297.2714-1.0507.7982-3.5237.1222-4.7316a1.5641 1.5641 0 0 0-.1509-.235C21.6931.9086 19.8007.0248 17.5099.0005c-1.4947-.0158-2.7705.3461-3.1161.4794a9.449 9.449 0 0 0-.5159-.0816 8.044 8.044 0 0 0-1.3114-.1278c-1.1822-.0184-2.2038.2642-3.0498.8406-.8573-.3211-4.7888-1.645-7.2219.0788C.9359 2.1526.3086 3.8733.4302 6.3043c.0409.818.5069 3.334 1.2423 5.7436.4598 1.5065.9387 2.7019 1.4334 3.582.553.9942 1.1259 1.5933 1.7143 1.7895.4474.1491 1.1327.1441 1.8581-.7279.8012-.9635 1.5903-1.8258 1.9446-2.2069.4351.2355.9064.3625 1.39.3772a.0569.0569 0 0 0 .0004.0041 11.0312 11.0312 0 0 0-.2472.3054c-.3389.4302-.4094.5197-1.5002.7443-.3102.064-1.1344.2339-1.1464.8115-.0025.1224.0329.2309.0919.3268.2269.4231.9216.6097 1.015.6331 1.3345.3335 2.5044.092 3.3714-.6787-.017 2.231.0775 4.4174.3454 5.0874.2212.5529.7618 1.9045 2.4692 1.9043.2505 0 .5263-.0291.8296-.0941 1.7819-.3821 2.5557-1.1696 2.855-2.9059.1503-.8707.4016-2.8753.5388-4.1012.0169-.0703.0357-.1207.057-.1362.0007-.0005.0697-.0471.4272.0307a.3673.3673 0 0 0 .0443.0068l.2539.0223.0149.001c.8468.0384 1.9114-.1426 2.5312-.4308.6438-.2988 1.8057-1.0323 1.5951-1.6698zM2.371 11.8765c-.7435-2.4358-1.1779-4.8851-1.2123-5.5719-.1086-2.1714.4171-3.6829 1.5623-4.4927 1.8367-1.2986 4.8398-.5408 6.108-.13-.0032.0032-.0066.0061-.0098.0094-2.0238 2.044-1.9758 5.536-1.9708 5.7495-.0002.0823.0066.1989.0162.3593.0348.5873.0996 1.6804-.0735 2.9184-.1609 1.1504.1937 2.2764.9728 3.0892.0806.0841.1648.1631.2518.2374-.3468.3714-1.1004 1.1926-1.9025 2.1576-.5677.6825-.9597.5517-1.0886.5087-.3919-.1307-.813-.5871-1.2381-1.3223-.4796-.839-.9635-2.0317-1.4155-3.5126zm6.0072 5.0871c-.1711-.0428-.3271-.1132-.4322-.1772.0889-.0394.2374-.0902.4833-.1409 1.2833-.2641 1.4815-.4506 1.9143-1.0002.0992-.126.2116-.2687.3673-.4426a.3549.3549 0 0 0 .0737-.1298c.1708-.1513.2724-.1099.4369-.0417.156.0646.3078.26.3695.4752.0291.1016.0619.2945-.0452.4444-.9043 1.2658-2.2216 1.2494-3.1676 1.0128zm2.094-3.988-.0525.141c-.133.3566-.2567.6881-.3334 1.003-.6674-.0021-1.3168-.2872-1.8105-.8024-.6279-.6551-.9131-1.5664-.7825-2.5004.1828-1.3079.1153-2.4468.079-3.0586-.005-.0857-.0095-.1607-.0122-.2199.2957-.2621 1.6659-.9962 2.6429-.7724.4459.1022.7176.4057.8305.928.5846 2.7038.0774 3.8307-.3302 4.7363-.084.1866-.1633.3629-.2311.5454zm7.3637 4.5725c-.0169.1768-.0358.376-.0618.5959l-.146.4383a.3547.3547 0 0 0-.0182.1077c-.0059.4747-.054.6489-.115.8693-.0634.2292-.1353.4891-.1794 1.0575-.11 1.4143-.8782 2.2267-2.4172 2.5565-1.5155.3251-1.7843-.4968-2.0212-1.2217a6.5824 6.5824 0 0 0-.0769-.2266c-.2154-.5858-.1911-1.4119-.1574-2.5551.0165-.5612-.0249-1.9013-.3302-2.6462.0044-.2932.0106-.5909.019-.8918a.3529.3529 0 0 0-.0153-.1126 1.4927 1.4927 0 0 0-.0439-.208c-.1226-.4283-.4213-.7866-.7797-.9351-.1424-.059-.4038-.1672-.7178-.0869.067-.276.1831-.5875.309-.9249l.0529-.142c.0595-.16.134-.3257.213-.5012.4265-.9476 1.0106-2.2453.3766-5.1772-.2374-1.0981-1.0304-1.6343-2.2324-1.5098-.7207.0746-1.3799.3654-1.7088.5321a5.6716 5.6716 0 0 0-.1958.1041c.0918-1.1064.4386-3.1741 1.7357-4.4823a4.0306 4.0306 0 0 1 .3033-.276.3532.3532 0 0 0 .1447-.0644c.7524-.5706 1.6945-.8506 2.802-.8325.4091.0067.8017.0339 1.1742.081 1.939.3544 3.2439 1.4468 4.0359 2.3827.8143.9623 1.2552 1.9315 1.4312 2.4543-1.3232-.1346-2.2234.1268-2.6797.779-.9926 1.4189.543 4.1729 1.2811 5.4964.1353.2426.2522.4522.2889.5413.2403.5825.5515.9713.7787 1.2552.0696.087.1372.1714.1885.245-.4008.1155-1.1208.3825-1.0552 1.717-.0123.1563-.0423.4469-.0834.8148-.0461.2077-.0702.4603-.0994.7662zm.8905-1.6211c-.0405-.8316.2691-.9185.5967-1.0105a2.8566 2.8566 0 0 0 .135-.0406 1.202 1.202 0 0 0 .1342.103c.5703.3765 1.5823.4213 3.0068.1344-.2016.1769-.5189.3994-.9533.6011-.4098.1903-1.0957.333-1.7473.3636-.7197.0336-1.0859-.0807-1.1721-.151zm.5695-9.2712c-.0059.3508-.0542.6692-.1054 1.0017-.055.3576-.112.7274-.1264 1.1762-.0142.4368.0404.8909.0932 1.3301.1066.887.216 1.8003-.2075 2.7014a3.5272 3.5272 0 0 1-.1876-.3856c-.0527-.1276-.1669-.3326-.3251-.6162-.6156-1.1041-2.0574-3.6896-1.3193-4.7446.3795-.5427 1.3408-.5661 2.1781-.463zm.2284 7.0137a12.3762 12.3762 0 0 0-.0853-.1074l-.0355-.0444c.7262-1.1995.5842-2.3862.4578-3.4385-.0519-.4318-.1009-.8396-.0885-1.2226.0129-.4061.0666-.7543.1185-1.0911.0639-.415.1288-.8443.1109-1.3505.0134-.0531.0188-.1158.0118-.1902-.0457-.4855-.5999-1.938-1.7294-3.253-.6076-.7073-1.4896-1.4972-2.6889-2.0395.5251-.1066 1.2328-.2035 2.0244-.1859 2.0515.0456 3.6746.8135 4.8242 2.2824a.908.908 0 0 1 .0667.1002c.7231 1.3556-.2762 6.2751-2.9867 10.5405zm-8.8166-6.1162c-.025.1794-.3089.4225-.6211.4225a.5821.5821 0 0 1-.0809-.0056c-.1873-.026-.3765-.144-.5059-.3156-.0458-.0605-.1203-.178-.1055-.2844.0055-.0401.0261-.0985.0925-.1488.1182-.0894.3518-.1226.6096-.0867.3163.0441.6426.1938.6113.4186zm7.9305-.4114c.0111.0792-.049.201-.1531.3102-.0683.0717-.212.1961-.4079.2232a.5456.5456 0 0 1-.075.0052c-.2935 0-.5414-.2344-.5607-.3717-.024-.1765.2641-.3106.5611-.352.297-.0414.6111.0088.6356.1851z"/></svg></span><span class="sk__name">PostgreSQL</span></li>
+            </ul>
+          </div>
+          <svg class="deco-clip" viewBox="0 0 32 64" aria-hidden="true" focusable="false"><path fill="none" stroke="#8FB4D9" stroke-width="3.4" stroke-linecap="round" d="M12 22V9a6 6 0 0 1 12 0v38a9 9 0 0 1-18 0V17"/></svg>
+        </article>
+
+        <!-- ===== Tools ===== -->
+        <article class="note note--tools" style="--i: 5; --tilt: 1.2deg" aria-labelledby="sk-tools">
+          <div class="note__paper">
+            <h3 id="sk-tools" class="note__title">Tools</h3>
+            <ul class="sk-list">
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#007ACC" fill-rule="evenodd" d="M17 2l4.5 2.2v15.6L17 22l-9.5-8.7-3.9 3L2 15.4V8.6l1.6-.9 3.9 3L17 2Zm0 5.3L11.4 12l5.6 4.7ZM3.9 9.7v4.6L6.3 12Z"/></svg></span><span class="sk__name">VS Code</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#2496ED" d="M2.4 11.8h17c.7-1 1.8-1.4 2.6-1.2-.2 1.1-1.1 1.8-2.1 1.9-1.1 4-4.7 6.7-9.9 6.7-4.4 0-7.2-2.7-7.6-7.4Z"/><g fill="#2496ED"><rect x="4.4" y="8.6" width="2.6" height="2.6" rx=".3"/><rect x="7.6" y="8.6" width="2.6" height="2.6" rx=".3"/><rect x="10.8" y="8.6" width="2.6" height="2.6" rx=".3"/><rect x="14" y="8.6" width="2.6" height="2.6" rx=".3"/><rect x="7.6" y="5.4" width="2.6" height="2.6" rx=".3"/><rect x="10.8" y="5.4" width="2.6" height="2.6" rx=".3"/><rect x="10.8" y="2.2" width="2.6" height="2.6" rx=".3"/></g></svg></span><span class="sk__name">Docker</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10.5" fill="#FF6C37"/><path fill="#fff" d="M14.6 6.3a2.7 2.7 0 0 1 3.1 3.1l-5.5 5.5-3.1-3.1Z"/><path fill="#fff" d="m8.4 12.6 3 3-4 1Z"/></svg></span><span class="sk__name">Postman</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#181717" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></span><span class="sk__name">GitHub</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 6.6 5 4.6M17.4 6.6 19 4.6" stroke="#7A4E2D" stroke-width="2" stroke-linecap="round"/><ellipse cx="12" cy="12" rx="7" ry="7.5" fill="#7A4E2D"/><circle cx="9.4" cy="10" r="1.1" fill="#fff"/><circle cx="14.6" cy="10" r="1.1" fill="#fff"/><ellipse cx="12" cy="13.6" rx="2.6" ry="1.7" fill="#C89B72"/><rect x="11" y="14.8" width="2" height="2.8" rx=".4" fill="#fff"/></svg></span><span class="sk__name">DBeaver</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#F24E1E" d="M9 2h3v6H9a3 3 0 0 1 0-6Z"/><path fill="#FF7262" d="M12 2h3a3 3 0 0 1 0 6h-3Z"/><path fill="#A259FF" d="M9 8h3v6H9a3 3 0 0 1 0-6Z"/><circle fill="#1ABCFE" cx="15" cy="11" r="3"/><path fill="#0ACF83" d="M9 14h3v3a3 3 0 1 1-3-3Z"/></svg></span><span class="sk__name">Figma</span></li>
+              <li class="sk"><span class="sk__box"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><defs><linearGradient id="ij-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FE315D"/><stop offset=".5" stop-color="#087CFA"/><stop offset="1" stop-color="#FE2857"/></linearGradient></defs><rect width="24" height="24" rx="4" fill="url(#ij-grad)"/><rect x="4" y="4" width="16" height="16" fill="#000"/><text x="6" y="12.6" font-family="Figtree, Arial, sans-serif" font-weight="800" font-size="7" fill="#fff">IJ</text><rect x="6" y="16.2" width="6" height="1.4" fill="#fff"/></svg></span><span class="sk__name">IntelliJ IDEA</span></li>
+            </ul>
+
+            <!-- ข้อมูลจาก Resume: แก้ได้ตรงนี้ -->
+            <div class="sticky-notes" lang="en">
+              <p class="sticky sticky--pink"><span class="visually-hidden">Soft skills: </span>Teamwork · Problem Solving · Self-learning</p>
+              <p class="sticky sticky--blue"><span class="visually-hidden">Languages: </span>Thai (Native) · English (Intermediate)</p>
+            </div>
+          </div>
+          <svg class="deco-clips" viewBox="0 0 80 64" aria-hidden="true" focusable="false"><g fill="none" stroke-width="3.2" stroke-linecap="round"><path stroke="#E8A9C4" d="M12 34V21a6 6 0 0 1 12 0v30a9 9 0 0 1-18 0V29" transform="rotate(38 16 36)"/><path stroke="#A4BBE0" d="M36 30V17a6 6 0 0 1 12 0v30a9 9 0 0 1-18 0V25" transform="rotate(38 40 32)"/><path stroke="#F2D98C" d="M58 26V13a6 6 0 0 1 12 0v30a9 9 0 0 1-18 0V21" transform="rotate(30 62 28)"/></g></svg>
+        </article>
+      </div>
+
+      <a class="to-top" href="#main" aria-label="กลับขึ้นด้านบน">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- =================== MY PROJECT =================== -->
+    <!-- ข้อมูลโปรเจกต์แก้ที่ไฟล์ js/main.js (ตัวแปร PROJECTS) ที่เดียว -->
+    <section id="project" class="project sheet" tabindex="-1" aria-labelledby="project-title">
+      <nav class="section-tabs" aria-label="สลับหัวข้อ">
+        <a class="ftab ftab--contact" href="#contact"><span class="ftab__ear">My Contact</span></a>
+        <a class="ftab ftab--project is-active" href="#project" aria-current="true"><span class="ftab__ear">My Project</span></a>
+        <a class="ftab ftab--skill" href="#skill"><span class="ftab__ear">My Skill</span></a>
+        <a class="ftab ftab--about" href="#about"><span class="ftab__ear">About Me</span></a>
+      </nav>
+
+      <div class="project__body">
+        <h2 id="project-title" class="visually-hidden">ผลงานโปรเจกต์</h2>
+
+        <div class="carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="ผลงานโปรเจกต์">
+          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="โปรเจกต์ก่อนหน้า" aria-controls="project-track">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg>
+          </button>
+
+          <div class="carousel__viewport">
+            <!-- การ์ดถูกสร้างจาก js/main.js -->
+            <ul class="carousel__track" id="project-track" data-stagger></ul>
+            <noscript>
+              <p class="carousel__noscript">เปิด JavaScript เพื่อดูผลงาน หรือดูที่ <a href="https://github.com/natcha-runsri">GitHub</a></p>
+            </noscript>
+          </div>
+
+          <button class="carousel__btn carousel__btn--next" type="button" aria-label="โปรเจกต์ถัดไป" aria-controls="project-track">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <div class="carousel__dots" role="group" aria-label="เลือกโปรเจกต์"></div>
+          <p class="carousel__status visually-hidden" aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </div>
+
+      <a class="to-top" href="#main" aria-label="กลับขึ้นด้านบน">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- =================== MY CONTACT =================== -->
+    <section id="contact" class="contact sheet" tabindex="-1" aria-labelledby="contact-title">
+      <nav class="section-tabs" aria-label="สลับหัวข้อ">
+        <a class="ftab ftab--contact is-active" href="#contact" aria-current="true"><span class="ftab__ear">My Contact</span></a>
+        <a class="ftab ftab--project" href="#project"><span class="ftab__ear">My Project</span></a>
+        <a class="ftab ftab--skill" href="#skill"><span class="ftab__ear">My Skill</span></a>
+        <a class="ftab ftab--about" href="#about"><span class="ftab__ear">About Me</span></a>
+      </nav>
+
+      <div class="contact__body">
+        <!-- ซ้าย: หัวข้อ + ข้อความ -->
+        <div class="contact__text" data-inview="left">
+          <h2 id="contact-title" class="contact__title" lang="en">Work<br>with<br>Me!</h2>
+          <p class="contact__lead" lang="en">
+            I’d love the chance to learn and grow with your team.<br>
+            Currently seeking a Co-op Full-Stack Developer internship. Let’s connect!
+          </p>
+          <!-- บรรทัดภาษาไทย: ลบได้ถ้าไม่ต้องการ -->
+          <p class="contact__th" lang="th">ยินดีตอบทุกข้อความค่ะ</p>
+        </div>
+
+        <!-- ขวา: โฟลเดอร์ + ป้ายลิงก์ลอย -->
+        <div class="contact__stage">
+          <svg class="contact__folder" viewBox="0 0 432 300" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 0h100l45 30h287v10H0Z" />
+            <rect x="0" y="54" width="432" height="246" />
+          </svg>
+
+          <nav aria-label="ช่องทางติดต่อ">
+            <ul class="contact-links">
+              <!-- Resume อยู่ลำดับแรก (บนสุดบนมือถือ) — วางไฟล์จริงที่ files/Resume.pdf -->
+              <li class="cl cl--resume" style="--i: 0">
+                <a class="pill cpill pill--resume" href="files/Resume.pdf" target="_blank" rel="noopener" download style="--float-delay: -2.6s">
+                  <svg class="cpill__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8Z"/>
+                    <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M14 2.5V8h5.5"/>
+                    <circle cx="12" cy="11.5" r="2" fill="currentColor"/>
+                    <path fill="currentColor" d="M8.5 18c.4-2 1.8-3.2 3.5-3.2s3.1 1.2 3.5 3.2Z"/>
+                  </svg>
+                  <span>My Resume</span>
+                </a>
+              </li>
+              <li class="cl cl--email" style="--i: 1">
+                <!-- แก้อีเมล: ต้องเป็นอีเมลเดียวกับที่ใช้ทั้งเว็บ (Hero ด้วย) -->
+                <a class="pill cpill" href="mailto:natcha.run30@gmail.com" style="--float-delay: -0.4s">
+                  <svg class="cpill__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect x="2.5" y="5" width="19" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M3 5.8 12 13l9-7.2M3 18.4l6.6-6.4M21 18.4 14.4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  </svg>
+                  <span>natcha.run30@gmail.com</span>
+                </a>
+              </li>
+              <li class="cl cl--github" style="--i: 2">
+                <!-- แก้ชื่อผู้ใช้ GitHub จริง -->
+                <a class="pill cpill" href="https://github.com/natcha-runsri" target="_blank" rel="noopener" style="--float-delay: -1.6s">
+                  <svg class="cpill__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li class="cl cl--phone" style="--i: 3">
+                <!-- แก้เบอร์โทร (ทั้งใน href แบบ +66 และข้อความ) -->
+                <a class="pill cpill" href="tel:+66800234631" style="--float-delay: -3.2s">
+                  <svg class="cpill__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M6.6 3.5h-2a1.6 1.6 0 0 0-1.6 1.8 17 17 0 0 0 15.7 15.2 1.6 1.6 0 0 0 1.8-1.6v-2a1.2 1.2 0 0 0-.9-1.2l-3.3-.9a1.2 1.2 0 0 0-1.2.4l-1.3 1.6a12.5 12.5 0 0 1-5.8-5.8l1.6-1.3a1.2 1.2 0 0 0 .4-1.2l-.9-3.3a1.2 1.2 0 0 0-1.2-.9Z"/>
+                    <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M14.5 3.5a6 6 0 0 1 6 6M14.5 7a2.6 2.6 0 0 1 2.5 2.5"/>
+                  </svg>
+                  <span>080-023-4631</span>
+                </a>
+              </li>
+              <!-- เพิ่มป้าย LinkedIn ตรงนี้ได้เมื่อมีบัญชี (คัดลอก <li> ด้านบนแล้วแก้ class เป็น cl--linkedin + ตำแหน่งใน CSS) -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <svg class="contact__clip" viewBox="0 0 32 64" aria-hidden="true" focusable="false">
+        <path d="M12 22V9a6 6 0 0 1 12 0v38a9 9 0 0 1-18 0V17" />
+      </svg>
+
+      <a class="to-top" href="#main" aria-label="กลับขึ้นด้านบน">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
+        </svg>
+      </a>
+    </section>
+  </main>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
